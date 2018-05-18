@@ -17,18 +17,23 @@ app.use(express.static('views/layouts'));
 app.use(cookieParser())
 app.use(session({
   secret: 'i need more beers',
-  resave: false,
+  resave: true,
   saveUninitialized: false,
   store: new MongoStore({
     url: url,
-  })
+  }),
+  unset: "keep"
 }))
 
 app.engine('.hbs', exphbs({extname: '.hbs'}));
 app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'views/layouts'))
 
+
+
+
 app.get('/', (request, response) => {
+    console.log(request.session.user)
     if(request.session.user != undefined){
       response.render('index', {
       })
