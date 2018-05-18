@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div class="wrapper">
+		<main class="lp">
+			<section class="white-section-with">
+				<h2>Register</h2>
+				<form action="/register" class="default-form form-reg" method="POST">
+					<div class="inputs">
+						<div id="inputs-first">
+							<input type="text" placeholder="Login" id="reg-login" name="login">
+							<div class="line-under-input"></div>
+							<input type="email" placeholder="Email" id="reg-mail" name="email">
+							<div class="line-under-input"></div>
+							<input type="text" placeholder="Sex" id="reg-sex" name="sex">
+						</div>
+						<div>
+							<input type="text" placeholder="Age" id="reg-age" name="age">
+							<div class="line-under-input"></div>
+							<input type="password" placeholder="Password" id="reg-password" name="password">
+							<div class="line-under-input"></div>
+							<input type="password" placeholder="Confirm password" id="reg-confirm">
+						</div>
+					</div>
+					<input type="submit" value="Register">
+					<div>
+						<span>Have account?</span>
+						<span class="clickable" id="login-form"><a href="login.html">Login</a></span>
+					</div>
+				</form>
+			</section>
+		</main>
+	</div>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
