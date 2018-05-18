@@ -22,12 +22,12 @@ $(document).ready(function () {
 		$("#inputs-first").append("<div class='line-under-input'></div>");
 	}
 
-	$("#send-qustion-button").on('click', function() {
-		$(".pop-up").css('display', 'flex')
-    .hide()
-    .fadeIn();
-		return false;
-	});
+	// $("#send-qustion-button").on('click', function() {
+	// 	$(".pop-up").css('display', 'flex')
+ //    .hide()
+ //    .fadeIn();
+	// 	return false;
+	// });
 
 	$("#pop-up-button-no").on('click', function() {
 		$(".pop-up").css('display', 'none');
